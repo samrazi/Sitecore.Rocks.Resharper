@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Sitecore.Rocks.Resharper</id>
+    <version>1.0.0</version>
+    <title>Sitecore Rocks Resharper</title>
+    <authors>Jakob Christensen</authors>
+    <description>Integrates Sitecore Rocks deep into the Visual Studio Text Editor.</description>
+    <copyright>Copyright &#x00A9; Jakob Christensen</copyright>
+    <tags>Sitecore Rocks</tags>
+    <dependencies>
+      <dependency id="ReSharper" version="8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="v7.1\*.*" target="ReSharper\v7.1\Plugins\Sitecore.Rocks.Resharper" />
+    <file src="v8.2\*.*" target="ReSharper\v8.2\Plugins\Sitecore.Rocks.Resharper" />
+  </files>
+</package>
