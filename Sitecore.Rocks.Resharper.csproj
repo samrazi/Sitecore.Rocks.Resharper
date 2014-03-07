@@ -47,12 +47,19 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="Sitecore.Rocks">
-      <HintPath>Components\Sitecore.Rocks.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Plugins">
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Speak">
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.Speak.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Rocks.Validation">
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.Validation.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Rocks.VisualStudio">
-      <HintPath>Components\Sitecore.Rocks.VisualStudio.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.VisualStudio.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
