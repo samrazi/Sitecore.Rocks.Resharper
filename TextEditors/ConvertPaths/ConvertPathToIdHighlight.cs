@@ -3,7 +3,7 @@
 //   Copyright (C) by Sitecore A/S
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Sitecore.VisualStudio.TextEditors.ConvertPaths
+namespace Sitecore.Rocks.Resharper.TextEditors.ConvertPaths
 {
   using JetBrains.DocumentModel;
   using JetBrains.ReSharper.Daemon;

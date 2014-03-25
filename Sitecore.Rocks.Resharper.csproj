@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="packages\JetBrains.ReSharper.SDK.8.2.1001-EAP\build\JetBrains.ReSharper.SDK.Props" Condition="Exists('packages\JetBrains.ReSharper.SDK.8.2.1001-EAP\build\JetBrains.ReSharper.SDK.Props')" />
+  <Import Project="packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Props" Condition="Exists('packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -46,20 +46,30 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="Sitecore.Rocks">
-      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.dll</HintPath>
+    <Reference Include="Sitecore.Rocks, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a3d60f56f7d71b90, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0\lib\net40\Sitecore.Rocks.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Rocks.Plugins">
-      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.Plugins.dll</HintPath>
+    <Reference Include="Sitecore.Rocks.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=97d4151bbb4c9bdf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0\lib\net40\Sitecore.Rocks.Plugins.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Rocks.Speak">
-      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.Speak.dll</HintPath>
+    <Reference Include="Sitecore.Rocks.Speak, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bde424fe5a27fd6a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0\lib\net40\Sitecore.Rocks.Speak.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Rocks.Validation">
-      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.Validation.dll</HintPath>
+    <Reference Include="Sitecore.Rocks.Validation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=87bd4324f13866a8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0\lib\net40\Sitecore.Rocks.Validation.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.Rocks.VisualStudio">
-      <HintPath>packages\Sitecore.Rocks.Client.1.2.0-beta1\lib\Sitecore.Rocks.VisualStudio.dll</HintPath>
+    <Reference Include="Sitecore.Rocks.VisualStudio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1cc94664b6ed6bb0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Sitecore.Rocks.Client.1.2.0\lib\net40\Sitecore.Rocks.VisualStudio.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -86,16 +96,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Actions.xml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
+    <Error Condition="!Exists('packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Props'))" />
+    <Error Condition="!Exists('packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Targets'))" />
   </Target>
-  <Import Project="packages\JetBrains.ReSharper.SDK.8.2.1001-EAP\build\JetBrains.ReSharper.SDK.Targets" Condition="Exists('packages\JetBrains.ReSharper.SDK.8.2.1001-EAP\build\JetBrains.ReSharper.SDK.Targets')" />
+  <Import Project="packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Targets" Condition="Exists('packages\JetBrains.ReSharper.SDK.8.2.1158\build\JetBrains.ReSharper.SDK.Targets')" />
 </Project>

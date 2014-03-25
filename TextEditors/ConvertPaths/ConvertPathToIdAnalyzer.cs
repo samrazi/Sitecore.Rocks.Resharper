@@ -3,7 +3,7 @@
 //   Copyright (C) by Sitecore A/S
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Sitecore.VisualStudio.TextEditors.ConvertPaths
+namespace Sitecore.Rocks.Resharper.TextEditors.ConvertPaths
 {
   using System;
   using JetBrains.ReSharper.Daemon.Stages;
@@ -33,7 +33,7 @@ namespace Sitecore.VisualStudio.TextEditors.ConvertPaths
       }
 
       var text = literal.ConstantValue.Value as string;
-      if (string.IsNullOrEmpty(text))
+      if (text == null || string.IsNullOrEmpty(text))
       {
         return;
       }

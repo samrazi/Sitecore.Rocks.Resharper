@@ -4,7 +4,7 @@
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
 
-namespace Sitecore.VisualStudio.TextEditors.Actions
+namespace Sitecore.Rocks.Resharper.TextEditors.Actions
 {
   using System;
   using JetBrains.Application.Progress;

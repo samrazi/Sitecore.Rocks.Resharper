@@ -6,7 +6,7 @@
 //   The convert id to path.
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Sitecore.VisualStudio.TextEditors.Actions
+namespace Sitecore.Rocks.Resharper.TextEditors.Actions
 {
   using System;
   using JetBrains.Application.Progress;
@@ -24,7 +24,6 @@ namespace Sitecore.VisualStudio.TextEditors.Actions
   using Sitecore.VisualStudio.Data;
   using Sitecore.VisualStudio.Data.DataServices;
   using Sitecore.VisualStudio.Diagnostics;
-  using Sitecore.VisualStudio.Extensions.DataServiceExtensions;
   using Sitecore.VisualStudio.Extensions.StringExtensions;
   using Sitecore.VisualStudio.Sites;
 

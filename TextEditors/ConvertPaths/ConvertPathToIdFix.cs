@@ -3,7 +3,7 @@
 //   Copyright (C) by Sitecore A/S
 // </copyright>
 // --------------------------------------------------------------------------------------------------------------------
-namespace Sitecore.VisualStudio.TextEditors.ConvertPaths
+namespace Sitecore.Rocks.Resharper.TextEditors.ConvertPaths
 {
   using System;
   using JetBrains.Application.Progress;
@@ -18,7 +18,6 @@ namespace Sitecore.VisualStudio.TextEditors.ConvertPaths
   using Sitecore.VisualStudio.Annotations;
   using Sitecore.VisualStudio.Data;
   using Sitecore.VisualStudio.Data.DataServices;
-  using Sitecore.VisualStudio.Extensions.DataServiceExtensions;
   using Sitecore.VisualStudio.Extensions.StringExtensions;
 
   /// <summary>
@@ -117,7 +116,7 @@ namespace Sitecore.VisualStudio.TextEditors.ConvertPaths
         return null;
       }
 
-      var project = Projects.ProjectManager.GetProject(projectFileLocation);
+      var project = VisualStudio.Projects.ProjectManager.GetProject(projectFileLocation);
       if (project == null)
       {
         return null;
