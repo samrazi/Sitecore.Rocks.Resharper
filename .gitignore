@@ -1,0 +1,5 @@
+obj/
+bin/
+packages/
+Sitecore.Rocks.Resharper.sln.GhostDoc.xml
+Sitecore.Rocks.Resharper.v12.suo
